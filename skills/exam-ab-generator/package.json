@@ -1,0 +1,26 @@
+{
+  "name": "exam-ab-generator",
+  "version": "1.0.0",
+  "description": "Generate professional exam papers (A/B versions) with answers and rubrics from textbook/course materials",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test-exam-generator.js",
+    "demo": "node examples/demo-exam.js",
+    "validate": "node scripts/validate-exam.js"
+  },
+  "keywords": [
+    "exam",
+    "generator",
+    "education",
+    "assessment",
+    "teaching",
+    "quiz",
+    "test-paper"
+  ],
+  "author": "Clawaraot Intelligent Teaching Assistant",
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

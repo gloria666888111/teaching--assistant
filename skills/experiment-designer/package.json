@@ -1,0 +1,25 @@
+{
+  "name": "experiment-designer",
+  "version": "1.0.0",
+  "description": "智能实验设计系统 - 根据课程内容自动设计实验案例",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test-experiment-designer.js",
+    "demo": "node examples/demo-experiment.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "experiment",
+    "designer",
+    "teaching",
+    "education",
+    "programming",
+    "manual"
+  ],
+  "author": "Clawdbot Intelligent Teaching Assistant",
+  "license": "MIT",
+  "dependencies": {
+    "docx": "^8.2.0",
+    "fs-extra": "^11.1.1"
+  }
+}

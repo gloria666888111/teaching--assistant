@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>学生端 - 智能教学助手</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <nav class="nav">
+    <h1>学生端 · 智能教学助手</h1>
+    <a href="index.html">返回首页</a>
+  </nav>
+  <main class="main">
+    <div class="student-layout">
+      <!-- 用户信息栏 -->
+      <section class="panel user-bar">
+        <h3>用户信息栏</h3>
+        <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+          <span>头像</span>
+          <span>姓名：<strong>学生</strong></span>
+          <span>班级：--</span>
+          <span>当前课程：--</span>
+        </div>
+        <p style="margin:8px 0 0; font-size:.85rem; color:var(--muted);">（仅界面设计，待登录与后端对接）</p>
+      </section>
+
+      <!-- 教材知识点侧边栏 -->
+      <aside class="panel sidebar">
+        <h3>教材知识点侧边栏</h3>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="padding:8px 0; border-bottom:1px solid var(--border);">第1章 · 绪论</li>
+          <li style="padding:8px 0; border-bottom:1px solid var(--border);">第2章 · 知识表示</li>
+          <li style="padding:8px 0; border-bottom:1px solid var(--border);">第3章 · 搜索与问题求解</li>
+          <li style="padding:8px 0;">第4章 · …</li>
+        </ul>
+        <p style="margin-top:12px; font-size:.8rem; color:var(--muted);">（仅界面设计）</p>
+      </aside>
+
+      <!-- 主内容区：AI 对话 + 答题/错题本 -->
+      <div class="content">
+        <section class="panel">
+          <h3>AI 教学对话区</h3>
+          <div class="placeholder-box large">
+            与 AI 助手对话、提问知识点、获取讲解（界面预留，待 OpenClaw 对话接口对接）
+          </div>
+        </section>
+        <section class="panel" style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+          <div>
+            <h3>在线答题</h3>
+            <div class="placeholder-box" style="min-height:120px;">选择题、填空题、提交与反馈（界面预留）</div>
+          </div>
+          <div>
+            <h3>错题本</h3>
+            <div class="placeholder-box" style="min-height:120px;">错题列表、重做、掌握标记（界面预留）</div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 学习进度展示区 -->
+      <section class="panel progress-bar">
+        <h3>学习进度展示区</h3>
+        <div style="display:flex; gap:24px; flex-wrap:wrap;">
+          <div class="placeholder-box" style="flex:1; min-width:200px; min-height:80px;">本章进度 --%</div>
+          <div class="placeholder-box" style="flex:1; min-width:200px; min-height:80px;">整体进度 --%</div>
+        </div>
+        <p style="margin-top:8px; font-size:.8rem; color:var(--muted);">（仅界面设计）</p>
+      </section>
+    </div>
+  </main>
+  <script src="js/student.js"></script>
+</body>
+</html>

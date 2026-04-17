@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "description": "差异化督学提醒规则：按渠道/班级/学生/提问量选择消息模板",
+  "fallbackTemplates": {
+    "dailyLearning": "【督学提醒】{studentId}同学，今天请完成《{courseName}》学习任务：复习20分钟 + 自测5题 + 提1个问题。",
+    "checkin": "【打卡提醒】{studentId}同学，请在今晚完成《{courseName}》学习打卡，并回复“已完成+姓名”。",
+    "weeklyReview": "【周复盘提醒】{studentId}同学，请复盘本周《{courseName}》学习内容，整理1条薄弱知识点与改进计划。"
+  },
+  "rules": [
+    {
+      "id": "high-frequency-student",
+      "enabled": true,
+      "priority": 100,
+      "when": {
+        "messageTypes": ["督学提醒", "打卡提醒"],
+        "minQuestionCount": 6
+      },
+      "template": "【重点跟进】{studentId}同学，你近期提问较多，建议优先复习《{courseName}》薄弱章节，并完成5道针对性练习。"
+    },
+    {
+      "id": "unknown-student-default",
+      "enabled": true,
+      "priority": 10,
+      "when": {
+        "studentIds": ["unknown-student"]
+      },
+      "template": "【班级督学提醒】同学们请完成《{courseName}》今日任务：复习20分钟、自测5题、群内提问1次。"
+    }
+  ]
+}

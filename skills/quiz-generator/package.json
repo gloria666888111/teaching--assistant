@@ -1,0 +1,43 @@
+{
+  "name": "quiz-generator",
+  "version": "1.0.0",
+  "description": "智能自测题生成器，为课程章节生成带难度分级和详细解析的自测题",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test-quiz-generator.js",
+    "demo": "node example-quiz.js",
+    "start": "node index.js",
+    "lint": "eslint lib/ index.js",
+    "format": "prettier --write lib/ index.js example-quiz.js test-quiz-generator.js"
+  },
+  "keywords": [
+    "quiz",
+    "generator",
+    "education",
+    "assessment",
+    "teaching",
+    "difficulty-levels",
+    "course-materials"
+  ],
+  "author": "Clawdbot Intelligent Teaching Assistant",
+  "license": "MIT",
+  "dependencies": {},
+  "optionalDependencies": {
+    "marked": "^9.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clawdbot/teaching-assistant-skills"
+  },
+  "bugs": {
+    "url": "https://github.com/clawdbot/teaching-assistant-skills/issues"
+  },
+  "homepage": "https://github.com/clawdbot/teaching-assistant-skills#readme"
+}

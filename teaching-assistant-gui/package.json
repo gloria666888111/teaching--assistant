@@ -1,0 +1,14 @@
+{
+  "name": "teaching-assistant-gui",
+  "version": "1.0.0",
+  "description": "智能教学助手双端GUI - 教师端/学生端",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}

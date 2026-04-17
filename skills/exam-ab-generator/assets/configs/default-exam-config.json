@@ -1,0 +1,78 @@
+{
+  "course_name": "课程名称",
+  "exam_type": "期末考试",
+  "total_score": 100,
+  "duration_minutes": 120,
+  "difficulty": "中等",
+  "chapters": [],
+  "question_types": {
+    "single_choice": {
+      "enabled": true,
+      "count": 15,
+      "score_per_question": 2,
+      "difficulty_distribution": {
+        "basic": 0.6,
+        "intermediate": 0.3,
+        "advanced": 0.1
+      }
+    },
+    "multi_choice": {
+      "enabled": true,
+      "count": 5,
+      "score_per_question": 4,
+      "difficulty_distribution": {
+        "basic": 0.3,
+        "intermediate": 0.5,
+        "advanced": 0.2
+      }
+    },
+    "fill_blank": {
+      "enabled": true,
+      "count": 10,
+      "score_per_question": 2,
+      "difficulty_distribution": {
+        "basic": 0.7,
+        "intermediate": 0.2,
+        "advanced": 0.1
+      }
+    },
+    "short_answer": {
+      "enabled": true,
+      "count": 4,
+      "score_per_question": 5,
+      "difficulty_distribution": {
+        "basic": 0.4,
+        "intermediate": 0.4,
+        "advanced": 0.2
+      }
+    },
+    "comprehensive": {
+      "enabled": true,
+      "count": 1,
+      "score_per_question": 10,
+      "difficulty_distribution": {
+        "basic": 0.2,
+        "intermediate": 0.3,
+        "advanced": 0.5
+      }
+    }
+  },
+  "version_requirements": {
+    "a_version": {
+      "basic_ratio": 0.7,
+      "avoid_repeat_with_b": true
+    },
+    "b_version": {
+      "advanced_ratio": 0.7,
+      "avoid_repeat_with_a": true
+    }
+  },
+  "validation_rules": {
+    "min_knowledge_coverage": 0.9,
+    "max_single_chapter_ratio": 0.3,
+    "require_textbook_reference": true,
+    "require_page_number": true
+  },
+  "output_format": "markdown",
+  "output_path": "output/exams/"
+}

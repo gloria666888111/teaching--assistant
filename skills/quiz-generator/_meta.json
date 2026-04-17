@@ -1,0 +1,23 @@
+{
+  "slug": "quiz-generator",
+  "version": "1.0.0",
+  "author": "Clawdbot Intelligent Teaching Assistant",
+  "description": "智能自测题生成器，为课程章节生成带难度分级和详细解析的自测题",
+  "created": "2026-03-08",
+  "updated": "2026-03-11",
+  "keywords": [
+    "quiz",
+    "generator",
+    "education",
+    "assessment",
+    "teaching",
+    "difficulty-levels"
+  ],
+  "dependencies": [],
+  "optionalDependencies": [
+    "marked"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

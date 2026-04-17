@@ -1,0 +1,25 @@
+{
+  "name": "course-content-generator",
+  "version": "1.0.0",
+  "description": "Generate course content for PPT generation based on teaching materials",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test-integration.js",
+    "validate": "node scripts/validate-input.js",
+    "demo": "node example-usage.js"
+  },
+  "keywords": [
+    "education",
+    "course-content",
+    "ppt-generation",
+    "teaching",
+    "courseware",
+    "material-loader"
+  ],
+  "author": "Clawdbot Intelligent Teaching Assistant",
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "description": "教务自动回复规则：关键词匹配 -> 模板回复 -> 必要时升级到AI答疑",
+  "rules": [
+    {
+      "id": "deadline-template",
+      "enabled": true,
+      "keywords": ["截止", "ddl", "什么时候交", "提交时间"],
+      "mode": "template",
+      "template": "【教务自动回复】《{courseName}》作业提交时间请以课程群公告和老师最新通知为准。若你告诉我具体作业名称，我可以继续帮你确认要求。"
+    },
+    {
+      "id": "exam-template",
+      "enabled": true,
+      "keywords": ["考试安排", "考试时间", "期中", "期末"],
+      "mode": "template",
+      "template": "【教务自动回复】《{courseName}》考试安排请以教务通知和授课教师公告为准。你也可以继续问我本课程某章节的复习要点。"
+    },
+    {
+      "id": "materials-template-then-ai",
+      "enabled": true,
+      "keywords": ["课件", "讲义", "教材", "实验手册", "资料"],
+      "mode": "template_then_ai",
+      "template": "【教务自动回复】《{courseName}》课程资料通常由老师在课程群或教学平台统一发布。若你想要某章知识点讲解，请直接说“《课程名》第X章 + 你的问题”。",
+      "escalateKeywords": ["原理", "定义", "怎么", "如何", "为什么", "是什么意思", "解释"]
+    }
+  ]
+}
